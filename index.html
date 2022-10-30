@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calculadora de hidratacion</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div id="contenedor">
+                <div id="calculadora">
+                    <!-- Formulario -->
+                    <div class="contenido">
+                        <h1>Hidratacion Basal</h1>
+                        <p class="item">completa los datos</p>
+                        <input class="item" id="peso" type="number" placeholder="peso en kg" />
+                        <br>
+                        <p class="item" id="error">* Debe completar los datos</p>
+                        <button class="item" id="calcular">Calcular</button>
+                        <p class="itemResultado" id="flu">2522 cc/h</p>
+                        <p class="itemResultado" id="man">xxx m+m/2</p>
+                   </div>
+                 </div>
+                <div id="detalle">
+                        <!--Detalle-->
+                        <div class="contenido">
+                            <h1>¿Como se calcula?</h1>
+                            <ul>
+                                <div id="lista">
+                                    <li>De 0kg a 10kg, se calcula 100cc x kg.</li>
+                                    <li>Se suman 50cc por cada kg de peso por arriba de 10kg, hasta 20kg.</li>
+                                    <li>De 20kg para arriba, se suman 20cc por cada kg adicional.</li>
+                             </div>
+                            </ul>
+                            <h3>Mayor a 30kg:</h3>
+                            <ul>
+                                <div id="lista2">
+                                    <li>Metodo de superficie corporal.</li>
+                                </div>
+                            </ul>
+                        </div>
+                  </div>
+       </div>
+    </body>
+
+</html>
